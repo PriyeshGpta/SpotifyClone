@@ -58,7 +58,6 @@ function App() {
   useEffect(() => {
     initializePlaylist();
 
-    // current client credentials will be deleted in few days
     const fetchToken = async () => {
       try {
         const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -146,7 +145,7 @@ function App() {
           <div className="col-12 py-5 text-center">
             <h1>
               <i className="bi bi-music-note-list mx-3"></i>
-              v-music
+              Spotify-music
             </h1>
             <h3 className="py-5">Discover music in 30 seconds</h3>
             <div>
@@ -154,7 +153,7 @@ function App() {
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-outline-dark"
-                href="https://github.com/Vishesh-Pandey/v-music"
+                href="https://github.com/PriyeshGpta/SpotifyClone"
               >
                 <i className="bi bi-github mx-2"></i>Github
               </a>
